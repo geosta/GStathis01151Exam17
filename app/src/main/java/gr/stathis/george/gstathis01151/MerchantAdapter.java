@@ -46,7 +46,10 @@ public class MerchantAdapter extends ArrayAdapter<Merchant> {
 
         viewHolder.imageView.setImageResource(R.drawable.yummy_logo);
         viewHolder.legalNameView.setText(m.getLegalName());
-        //.....
+        viewHolder.categoryNameView.setText(m.getCategory());
+        viewHolder.addressView.setText(m.getAddress());
+        viewHolder.ratingView.setText(m.getReview());
+
         return  rowView;
     }
 
@@ -62,6 +65,7 @@ public class MerchantAdapter extends ArrayAdapter<Merchant> {
             legalNameView = (TextView)view.findViewById(R.id.list_item_merchant_legal_name);
             categoryNameView= (TextView)view.findViewById(R.id.list_item_merchant_category);
             addressView= (TextView)view.findViewById(R.id.list_item_contact_point);
+            ratingView= (TextView)view.findViewById(R.id.list_item_aggregate_rating);
 
         }
     }

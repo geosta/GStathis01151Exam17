@@ -1,3 +1,5 @@
+package gr.stathis.george.gstathis01151;
+
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.util.Log;
@@ -12,9 +14,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
-
-import gr.stathis.george.gstathis01151.Merchant;
-import gr.stathis.george.gstathis01151.MerchantAdapter;
 
 /**
  * Created by user on 27/1/2017.

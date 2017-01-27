@@ -7,6 +7,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 
 /**
@@ -47,7 +50,8 @@ import android.view.ViewGroup;
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+            //gsgs View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_merchant , container, false);
             merchantAdapter = new MerchantAdapter(getActivity(),new ArrayList<Merchant>());
             ListView merchantListView = (ListView)rootView.findViewById(R.id.listview_merchants);
             merchantListView.setAdapter(merchantAdapter);
