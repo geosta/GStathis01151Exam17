@@ -19,8 +19,7 @@ import android.view.ViewGroup;
  *
  *
  */
-public class MerchantFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
+
     public class MerchantFragment extends Fragment {
 
         MerchantAdapter merchantAdapter;
@@ -56,4 +55,3 @@ public class MerchantFragment extends Fragment {
             return rootView;
         }
     }
-}

@@ -1,6 +1,7 @@
 package gr.stathis.george.gstathis01151;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -59,16 +60,10 @@ public class MerchantAdapter extends ArrayAdapter<Merchant> {
         public ViewHolder(View view){
             imageView = (ImageView)view.findViewById(R.id.list_item_merchant_image);
             legalNameView = (TextView)view.findViewById(R.id.list_item_merchant_legal_name);
-            //.....
+            categoryNameView= (TextView)view.findViewById(R.id.list_item_merchant_category);
+            addressView= (TextView)view.findViewById(R.id.list_item_contact_point);
+
         }
     }
 }
 
-public class Merchant {
-
-    private String id;
-    private String legalName;
-    private String category;
-    private String address;
-    private String imageUrl;
-    private String review;
