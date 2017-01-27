@@ -15,9 +15,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
-/**
- * Created by user on 27/1/2017.
- */
+
+
 public class FetchMerchantsTask extends AsyncTask<String,Void,ArrayList<Merchant>> {
 
     private final String LOG_TAG = FetchMerchantsTask.class.getSimpleName();
@@ -118,7 +117,10 @@ public class FetchMerchantsTask extends AsyncTask<String,Void,ArrayList<Merchant
     protected void onPostExecute(ArrayList<Merchant> merchants) {
         if(merchants.size() > 0){
             this.merchantAdapter.clear();
-            //.....
+            //......
+            for (Merchant merchant : merchants) {
+                this.merchantAdapter.add(merchant);
+            }
         }
     }
 }
