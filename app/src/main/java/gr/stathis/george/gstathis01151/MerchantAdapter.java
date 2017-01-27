@@ -1,6 +1,14 @@
 package gr.stathis.george.gstathis01151;
 
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
 
 /**
  * Created by user on 27/1/2017.
@@ -55,3 +63,12 @@ public class MerchantAdapter extends ArrayAdapter<Merchant> {
         }
     }
 }
+
+public class Merchant {
+
+    private String id;
+    private String legalName;
+    private String category;
+    private String address;
+    private String imageUrl;
+    private String review;
